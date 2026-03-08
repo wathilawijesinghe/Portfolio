@@ -1,29 +1,89 @@
-.navbar{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 20px 170px;
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  transition: all 0.4s ease;
+  padding: 20px 0;
 }
 
-.nav-menu{
-    display: flex;
-    align-items: center;
-    list-style: none;
-    gap: 60px;
-    font-size: 20px;
+.navbar.scrolled {
+  padding: 15px 0;
+  background: rgba(10, 10, 10, 0.7);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  border-bottom: 1px solid var(--border-glass);
 }
 
-.nav-connect{
-  padding: 20px 40px;
+.nav-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+}
+
+.nav-logo img {
+  height: 40px;
+  cursor: pointer;
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.2));
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 40px;
+  background: var(--bg-glass);
+  padding: 10px 30px;
   border-radius: 50px;
-  background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.6%);
-  font-size: 22px;
+  border: 1px solid var(--border-glass);
+}
+
+.nav-menu li {
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+  color: var(--text-secondary);
+  transition: color 0.3s ease;
+  padding: 5px 0;
+}
+
+.nav-menu li:hover, .nav-menu li.active {
+  color: var(--text-primary);
+}
+
+.nav-indicator {
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--gradient-accent);
+  border-radius: 2px;
+  box-shadow: var(--shadow-glow);
+}
+
+.nav-connect {
+  padding: 12px 28px;
+  border-radius: 50px;
+  background: var(--gradient-accent);
+  font-size: 16px;
   cursor: pointer;
   color: white;
-  font-weight: 500;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  transition: all 0.3s ease;
 }
 
-.nav-connect:hover{
-  transform: scale(1.05);
-  transition: 0.3s;
+@media (max-width: 960px) {
+  .nav-menu {
+    display: none;
+  }
+  .nav-connect {
+    display: none;
+  }
 }
