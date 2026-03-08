@@ -33,6 +33,38 @@ const Projects = () => {
       tags: ["React", "JavaScript"],
       github: "https://github.com/wathilawijesinghe/ToDo-App",
       live: "#"
+    },
+    {
+      title: "Zip Trip",
+      description: "A comprehensive backend system for a trip planning and booking application.",
+      image: "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=2021&auto=format&fit=crop",
+      tags: ["Java", "Spring Boot", "MySQL"],
+      github: "https://github.com/wathilawijesinghe/ZipTripNew",
+      live: "#"
+    },
+    {
+      title: "Nature Pollution Web App",
+      description: "An educational web platform highlighting the impact of environmental pollution and promoting conservation.",
+      image: "https://images.unsplash.com/photo-1621451537084-482c73073e0f?q=80&w=1974&auto=format&fit=crop",
+      tags: ["HTML", "CSS", "JavaScript"],
+      github: "https://github.com/wathilawijesinghe/Nature-Pollution-Web-App",
+      live: "#"
+    },
+    {
+      title: "Lab Test",
+      description: "A university laboratory test project demonstrating fundamental web development concepts.",
+      image: "https://images.unsplash.com/photo-1532094349884-543bc11b234d?q=80&w=2070&auto=format&fit=crop",
+      tags: ["HTML", "CSS", "PHP"],
+      github: "https://github.com/wathilawijesinghe/Lab-Test",
+      live: "#"
+    },
+    {
+      title: "Explore with Postman",
+      description: "A collection of API documentation and requests demonstrating API testing and integration skills.",
+      image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?q=80&w=2070&auto=format&fit=crop",
+      tags: ["Postman", "API Testing", "JSON"],
+      github: "https://github.com/wathilawijesinghe/explore-with-postman",
+      live: "#"
     }
   ];
 
