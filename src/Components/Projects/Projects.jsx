@@ -11,6 +11,22 @@ const Projects = () => {
 
   const projectsData = [
     {
+      title: "Zip Trip",
+      description: "A comprehensive backend system for a trip planning and booking application.",
+      image: "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=2021&auto=format&fit=crop",
+      tags: ["Java", "Spring Boot", "MySQL"],
+      github: "https://github.com/wathilawijesinghe/ZipTripNew",
+      live: "#"
+    },
+    {
+      title: "Nature Pollution Web App",
+      description: "An educational web platform highlighting the impact of environmental pollution and promoting conservation.",
+      image: "https://images.unsplash.com/photo-1621451537084-482c73073e0f?q=80&w=1974&auto=format&fit=crop",
+      tags: ["HTML", "CSS", "JavaScript"],
+      github: "https://github.com/wathilawijesinghe/Nature-Pollution-Web-App",
+      live: "#"
+    },
+    {
       title: "Job Application Tracker",
       description: "A web application to track job applications, their statuses, and relevant notes.",
       image: "https://images.unsplash.com/photo-1586281380349-632531db7ed4?q=80&w=2070&auto=format&fit=crop",
@@ -32,22 +48,6 @@ const Projects = () => {
       image: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?q=80&w=2072&auto=format&fit=crop",
       tags: ["React", "JavaScript"],
       github: "https://github.com/wathilawijesinghe/ToDo-App",
-      live: "#"
-    },
-    {
-      title: "Zip Trip",
-      description: "A comprehensive backend system for a trip planning and booking application.",
-      image: "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=2021&auto=format&fit=crop",
-      tags: ["Java", "Spring Boot", "MySQL"],
-      github: "https://github.com/wathilawijesinghe/ZipTripNew",
-      live: "#"
-    },
-    {
-      title: "Nature Pollution Web App",
-      description: "An educational web platform highlighting the impact of environmental pollution and promoting conservation.",
-      image: "https://images.unsplash.com/photo-1621451537084-482c73073e0f?q=80&w=1974&auto=format&fit=crop",
-      tags: ["HTML", "CSS", "JavaScript"],
-      github: "https://github.com/wathilawijesinghe/Nature-Pollution-Web-App",
       live: "#"
     }
   ];
