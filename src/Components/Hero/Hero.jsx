@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import AnchorLink from "react-anchor-link-smooth-scroll";
 import './Hero.css'
 import profile_img from '../../assets/profile_img.svg'
 
@@ -26,6 +27,7 @@ const Hero = () => {
 
     return (
         <motion.div 
+            id="home"
             className='hero'
             variants={containerVariants}
             initial="hidden"
@@ -46,20 +48,24 @@ const Hero = () => {
             </motion.p>
 
             <motion.div variants={itemVariants} className="hero-action">
-                <motion.div 
-                    className="hero-connect"
-                    whileHover={{ scale: 1.05, boxShadow: "0 0 25px rgba(139, 92, 246, 0.5)" }}
-                    whileTap={{ scale: 0.95 }}
-                >
-                    Connect with me
-                </motion.div>
-                <motion.div 
-                    className="hero-resume glass-panel"
-                    whileHover={{ scale: 1.05, backgroundColor: "rgba(255,255,255,0.1)" }}
-                    whileTap={{ scale: 0.95 }}
-                >
-                    My resume
-                </motion.div>
+                <AnchorLink className="hero-anchor" href="#contact" offset={50}>
+                    <motion.div 
+                        className="hero-connect"
+                        whileHover={{ scale: 1.05, boxShadow: "0 0 25px rgba(139, 92, 246, 0.5)" }}
+                        whileTap={{ scale: 0.95 }}
+                    >
+                        Connect with me
+                    </motion.div>
+                </AnchorLink>
+                <AnchorLink className="hero-anchor" href="#about" offset={50}>
+                    <motion.div 
+                        className="hero-resume glass-panel"
+                        whileHover={{ scale: 1.05, backgroundColor: "rgba(255,255,255,0.1)" }}
+                        whileTap={{ scale: 0.95 }}
+                    >
+                        My resume
+                    </motion.div>
+                </AnchorLink>
             </motion.div>
         </motion.div>
     )
