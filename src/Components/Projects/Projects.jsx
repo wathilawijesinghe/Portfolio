@@ -11,51 +11,27 @@ const Projects = () => {
 
   const projectsData = [
     {
-      title: "E-Commerce Dashboard",
-      description: "A comprehensive admin dashboard for managing products, orders, and users with real-time analytics.",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop",
-      tags: ["React", "Node.js", "Tailwind", "MongoDB"],
-      github: "#",
+      title: "Job Application Tracker",
+      description: "A web application to track job applications, their statuses, and relevant notes.",
+      image: "https://images.unsplash.com/photo-1586281380349-632531db7ed4?q=80&w=2070&auto=format&fit=crop",
+      tags: ["React", "JavaScript", "CSS"],
+      github: "https://github.com/wathilawijesinghe/Job-Application-Tracker",
       live: "#"
     },
     {
-      title: "AI Image Generator",
-      description: "A web application that generates images from text prompts using OpenAI's DALL-E API.",
-      image: "https://images.unsplash.com/photo-1620121692029-d088224ddc74?q=80&w=2032&auto=format&fit=crop",
-      tags: ["Next.js", "OpenAI", "Framer Motion", "CSS"],
-      github: "#",
+      title: "Calculator App",
+      description: "A functional calculator application for basic arithmetic operations.",
+      image: "https://images.unsplash.com/photo-1587145820266-a5951ee6f620?q=80&w=2000&auto=format&fit=crop",
+      tags: ["HTML", "CSS", "JavaScript"],
+      github: "https://github.com/wathilawijesinghe/Calculator-App",
       live: "#"
     },
     {
-      title: "Real Estate Platform",
-      description: "A property listing platform with advanced filtering, map integration, and virtual tours.",
-      image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1973&auto=format&fit=crop",
-      tags: ["React", "Firebase", "Google Maps", "Sass"],
-      github: "#",
-      live: "#"
-    },
-    {
-      title: "Task Management App",
-      description: "A drag-and-drop Kanban board for managing personal and team tasks.",
-      image: "https://images.unsplash.com/photo-1540350394557-8d14678e7f91?q=80&w=2064&auto=format&fit=crop",
-      tags: ["React", "Redux", "Styled Components"],
-      github: "#",
-      live: "#"
-    },
-    {
-      title: "Fitness Tracker API",
-      description: "A RESTful backend service for logging workouts, tracking nutrition, and analyzing progress.",
-      image: "https://images.unsplash.com/photo-1526401485004-46910ecc8e51?q=80&w=2070&auto=format&fit=crop",
-      tags: ["Node.js", "Express", "PostgreSQL", "Jest"],
-      github: "#",
-      live: "#"
-    },
-    {
-      title: "Crypto Portfolio Viewer",
-      description: "A real-time cryptocurrency dashboard fetching live prices and historical data charts.",
-      image: "https://images.unsplash.com/photo-1605792657660-596af9009e82?q=80&w=2002&auto=format&fit=crop",
-      tags: ["React", "Chart.js", "CoinGecko API"],
-      github: "#",
+      title: "ToDo App",
+      description: "A task management application to keep track of daily goals and activities.",
+      image: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?q=80&w=2072&auto=format&fit=crop",
+      tags: ["React", "JavaScript"],
+      github: "https://github.com/wathilawijesinghe/ToDo-App",
       live: "#"
     }
   ];
