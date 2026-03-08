@@ -97,9 +97,6 @@ const Projects = () => {
                 <a href={project.github} className="project-link">
                   <Github size={20} />
                 </a>
-                <a href={project.live} className="project-link">
-                  <ExternalLink size={20} />
-                </a>
               </div>
             </div>
             <div className="project-content">
