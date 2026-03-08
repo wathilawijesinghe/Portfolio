@@ -26,7 +26,7 @@ const Contact = () => {
 
   return (
     <div id="contact" className="contact" ref={ref}>
-      <motion.div 
+      <motion.div
         className="contact-title"
         initial={{ opacity: 0, y: -20 }}
         animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: -20 }}
@@ -37,7 +37,7 @@ const Contact = () => {
       </motion.div>
 
       <div className="contact-sections">
-        <motion.div 
+        <motion.div
           className="contact-left glass-panel"
           variants={containerVariants}
           initial="hidden"
@@ -47,19 +47,19 @@ const Contact = () => {
           <motion.p variants={itemVariants}>
             I'm currently available to take on new projects, so feel free to send me a message about anything that you want me to work on. You can contact anytime.
           </motion.p>
-          
+
           <div className="contact-details">
             <motion.div className="contact-detail" variants={itemVariants}>
               <div className="contact-icon"><Mail size={24} /></div>
-              <p>hello@wathila.com</p>
+              <p>wathilaw.official@gmail.com</p>
             </motion.div>
             <motion.div className="contact-detail" variants={itemVariants}>
               <div className="contact-icon"><Phone size={24} /></div>
-              <p>+94 77 123 4567</p>
+              <p>+94 76 290 0584</p>
             </motion.div>
             <motion.div className="contact-detail" variants={itemVariants}>
               <div className="contact-icon"><MapPin size={24} /></div>
-              <p>Colombo, Sri Lanka</p>
+              <p>Thalawathugoda, Sri Lanka</p>
             </motion.div>
           </div>
 
@@ -70,7 +70,7 @@ const Contact = () => {
           </motion.div>
         </motion.div>
 
-        <motion.form 
+        <motion.form
           className="contact-right glass-panel"
           initial={{ opacity: 0, x: 50 }}
           animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
@@ -88,8 +88,8 @@ const Contact = () => {
             <label htmlFor="message">Write your message here</label>
             <textarea id="message" rows="6" placeholder="Enter your message"></textarea>
           </div>
-          <motion.button 
-            type="submit" 
+          <motion.button
+            type="submit"
             className="submit-btn"
             whileHover={{ scale: 1.05, boxShadow: "0 0 20px rgba(139, 92, 246, 0.4)" }}
             whileTap={{ scale: 0.95 }}
