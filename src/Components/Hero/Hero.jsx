@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import './Hero.css'
-import profile_img from '../../assets/profile_img.svg'
+import profile_img from '../../assets/wathila.jpg'
 
 const Hero = () => {
     // Animation variants
@@ -26,7 +26,7 @@ const Hero = () => {
     };
 
     return (
-        <motion.div 
+        <motion.div
             id="home"
             className='hero'
             variants={containerVariants}
@@ -34,22 +34,22 @@ const Hero = () => {
             animate="visible"
         >
             <div className="hero-glow-orb"></div>
-            
+
             <motion.div variants={itemVariants} className="hero-img-container">
                 <img src={profile_img} alt="Wathila Wijesinghe" />
             </motion.div>
-            
+
             <motion.h1 variants={itemVariants}>
-                <span className="text-accent-gradient">I'm Wathila Wijesinghe,</span><br/> frontend developer based in Sri Lanka.
+                <span className="text-accent-gradient">I'm Wathila Wijesinghe,</span><br /> frontend developer based in Sri Lanka.
             </motion.h1>
-            
+
             <motion.p variants={itemVariants}>
                 I’m a passionate Frontend Developer with a strong interest in creating modern, responsive, and user-friendly web applications. I specialize in React and enjoy building clean interfaces with smooth interactions. I’m always eager to learn new technologies and improve my skills while turning creative ideas into real-world solutions.
             </motion.p>
 
             <motion.div variants={itemVariants} className="hero-action">
                 <AnchorLink className="hero-anchor" href="#contact" offset={50}>
-                    <motion.div 
+                    <motion.div
                         className="hero-connect"
                         whileHover={{ scale: 1.05, boxShadow: "0 0 25px rgba(139, 92, 246, 0.5)" }}
                         whileTap={{ scale: 0.95 }}
@@ -58,7 +58,7 @@ const Hero = () => {
                     </motion.div>
                 </AnchorLink>
                 <AnchorLink className="hero-anchor" href="#about" offset={50}>
-                    <motion.div 
+                    <motion.div
                         className="hero-resume glass-panel"
                         whileHover={{ scale: 1.05, backgroundColor: "rgba(255,255,255,0.1)" }}
                         whileTap={{ scale: 0.95 }}

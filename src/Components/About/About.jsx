@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import './About.css'
-import profile_img from '../../assets/about_profile.svg'
+import profile_img from '../../assets/wathila.jpg'
 
 const About = () => {
     const ref = useRef(null);
