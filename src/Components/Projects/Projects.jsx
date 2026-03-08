@@ -49,22 +49,6 @@ const Projects = () => {
       tags: ["HTML", "CSS", "JavaScript"],
       github: "https://github.com/wathilawijesinghe/Nature-Pollution-Web-App",
       live: "#"
-    },
-    {
-      title: "Lab Test",
-      description: "A university laboratory test project demonstrating fundamental web development concepts.",
-      image: "https://images.unsplash.com/photo-1532094349884-543bc11b234d?q=80&w=2070&auto=format&fit=crop",
-      tags: ["HTML", "CSS", "PHP"],
-      github: "https://github.com/wathilawijesinghe/Lab-Test",
-      live: "#"
-    },
-    {
-      title: "Explore with Postman",
-      description: "A collection of API documentation and requests demonstrating API testing and integration skills.",
-      image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?q=80&w=2070&auto=format&fit=crop",
-      tags: ["Postman", "API Testing", "JSON"],
-      github: "https://github.com/wathilawijesinghe/explore-with-postman",
-      live: "#"
     }
   ];
 
