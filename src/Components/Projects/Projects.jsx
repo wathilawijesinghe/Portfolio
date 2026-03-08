@@ -21,7 +21,7 @@ const Projects = () => {
     {
       title: "Nature Pollution Web App",
       description: "An educational web platform highlighting the impact of environmental pollution and promoting conservation.",
-      image: "https://images.unsplash.com/photo-1621451537084-482c73073e0f?q=80&w=1974&auto=format&fit=crop",
+      image: "https://images.unsplash.com/photo-1532550907401-a500c9a57435?q=80&w=2069&auto=format&fit=crop",
       tags: ["HTML", "CSS", "JavaScript"],
       github: "https://github.com/wathilawijesinghe/Nature-Pollution-Web-App",
       live: "#"
