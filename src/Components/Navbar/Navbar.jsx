@@ -22,26 +22,26 @@ const Navbar = () => {
   ];
 
   return (
-    <motion.nav 
+    <motion.nav
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
       className={`navbar ${scrolled ? "scrolled glass-panel" : ""}`}
     >
       <div className="nav-content">
-        <motion.div 
+        <motion.div
           className="nav-logo"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
           <AnchorLink href="#home">
-            <h1 style={{ color: "white", fontSize: "2rem", margin: 0, fontWeight: "bold" }}>Portfolio<span style={{color: "#a855f7"}}>.</span></h1>
+            <h1 style={{ color: "white", fontSize: "2rem", margin: 0, fontWeight: "bold" }}>Portfolio<span style={{ color: "#a855f7" }}>.</span></h1>
           </AnchorLink>
         </motion.div>
-        
+
         <ul className="nav-menu">
           {navItems.map((item) => (
-            <motion.li 
+            <motion.li
               key={item.name}
               className={activeItem === item.name ? "active" : ""}
               onClick={() => setActiveItem(item.name)}
@@ -52,7 +52,7 @@ const Navbar = () => {
                 {item.name}
               </AnchorLink>
               {activeItem === item.name && (
-                <motion.div 
+                <motion.div
                   layoutId="nav-indicator"
                   className="nav-indicator"
                   transition={{ type: "spring", stiffness: 300, damping: 30 }}
@@ -61,8 +61,8 @@ const Navbar = () => {
             </motion.li>
           ))}
         </ul>
-        
-        <motion.div 
+
+        <motion.div
           className="nav-connect"
           whileHover={{ scale: 1.05, boxShadow: "0 0 20px rgba(139, 92, 246, 0.4)" }}
           whileTap={{ scale: 0.95 }}
