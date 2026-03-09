@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
 import { Mail, MapPin, Phone, Github, Linkedin, Twitter } from "lucide-react";
 import './Contact.css';
@@ -6,6 +6,32 @@ import './Contact.css';
 const Contact = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
+  const [result, setResult] = useState("");
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setResult("Sending....");
+    const formData = new FormData(event.target);
+
+    // Enter your Web3Forms access key below
+    formData.append("access_key", "3f885497-d30f-47ec-800c-de67a5608179");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      setResult("Form Submitted Successfully");
+      event.target.reset();
+      setTimeout(() => setResult(""), 5000);
+    } else {
+      console.log("Error", data);
+      setResult(data.message);
+    }
+  };
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -75,18 +101,19 @@ const Contact = () => {
           initial={{ opacity: 0, x: 50 }}
           animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 50 }}
           transition={{ duration: 0.8, delay: 0.4 }}
+          onSubmit={onSubmit}
         >
           <div className="form-group">
             <label htmlFor="name">Your Name</label>
-            <input type="text" id="name" placeholder="Enter your name" />
+            <input type="text" id="name" name="name" placeholder="Enter your name" required />
           </div>
           <div className="form-group">
             <label htmlFor="email">Your Email</label>
-            <input type="email" id="email" placeholder="Enter your email" />
+            <input type="email" id="email" name="email" placeholder="Enter your email" required />
           </div>
           <div className="form-group">
             <label htmlFor="message">Write your message here</label>
-            <textarea id="message" rows="6" placeholder="Enter your message"></textarea>
+            <textarea id="message" name="message" rows="6" placeholder="Enter your message" required></textarea>
           </div>
           <motion.button
             type="submit"
@@ -96,6 +123,7 @@ const Contact = () => {
           >
             Submit now
           </motion.button>
+          {result && <span className="submit-result">{result}</span>}
         </motion.form>
       </div>
     </div>

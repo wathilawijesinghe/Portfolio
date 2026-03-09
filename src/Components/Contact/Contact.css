@@ -158,6 +158,13 @@
   margin-top: 10px;
 }
 
+.submit-result {
+  margin-top: 15px;
+  font-size: 16px;
+  color: var(--text-primary);
+  text-align: center;
+}
+
 @media (max-width: 960px) {
   .contact-sections {
     flex-direction: column;
