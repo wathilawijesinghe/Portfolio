@@ -82,7 +82,8 @@
 .nav-connect {
   background: var(--gradient-accent);
   border-radius: 30px;
-  padding: 2px; /* For animated border effect if we want, or just padding */
+  padding: 2px;
+  /* For animated border effect if we want, or just padding */
   overflow: hidden;
   position: relative;
 }
@@ -90,7 +91,8 @@
 .anchor-link-btn {
   display: block;
   padding: 10px 24px;
-  background: var(--bg-dark); /* Inner background */
+  background: var(--bg-dark);
+  /* Inner background */
   border-radius: 28px;
   text-decoration: none;
   color: var(--text-primary);
@@ -114,19 +116,20 @@
     top: auto;
     bottom: 20px;
   }
-  
-  .nav-logo, .nav-connect {
+
+  .nav-logo,
+  .nav-connect {
     display: none;
   }
 
   .nav-content {
     justify-content: center;
   }
-  
+
   .nav-menu {
     gap: 2px;
   }
-  
+
   .anchor-link {
     padding: 10px 16px;
     font-size: 13px;
