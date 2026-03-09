@@ -2,8 +2,6 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import "./Navbar.css";
-import logo from "../../assets/logo.svg";
-
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [activeItem, setActiveItem] = useState("Home");
@@ -37,7 +35,7 @@ const Navbar = () => {
           whileTap={{ scale: 0.95 }}
         >
           <AnchorLink href="#home">
-            <img src={logo} alt="Logo" />
+            <h1 style={{ color: "white", fontSize: "2rem", margin: 0, fontWeight: "bold" }}>Portfolio<span style={{color: "#a855f7"}}>.</span></h1>
           </AnchorLink>
         </motion.div>
         
